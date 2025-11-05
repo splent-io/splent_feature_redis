@@ -9,7 +9,5 @@ services:
       - splent_network
 
 networks:
-
   splent_network:
-    driver: bridge
-    name: splent_network
+    external: true
