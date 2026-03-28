@@ -1,7 +1,7 @@
 services:
 
   splent_feature_redis:
-    image: redis:latest
+    image: redis:7.4
     restart: always
     ports:
       - "${REDIS_HOST_PORT}:6379"
