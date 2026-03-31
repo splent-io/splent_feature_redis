@@ -11,6 +11,8 @@ import os
 def inject_config(app):
     redis_url = os.getenv("REDIS_URL", "redis://redis:6379")
 
-    app.config.update({
-        "REDIS_URL": redis_url,
-    })
+    app.config.update(
+        {
+            "REDIS_URL": redis_url,
+        }
+    )
